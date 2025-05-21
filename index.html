@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대학생 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>안녕하세요! 대학생 홈페이지에 오신 것을 환영합니다.</h1>
+        <p>이곳은 저를 소개하고, 게시판을 통해 소통할 수 있는 공간입니다.</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p>저는 대학생입니다. 이 홈페이지는 저를 소개하고, 다양한 정보를 공유하기 위해 만들었습니다.</p>
+        </section>
+        <section id="board">
+            <h2>게시판</h2>
+            <form id="postForm">
+                <input type="text" id="name" placeholder="이름" required>
+                <input type="text" id="message" placeholder="메시지" required>
+                <button type="submit">등록</button>
+            </form>
+            <ul id="postList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
